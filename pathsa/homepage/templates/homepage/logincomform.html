@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>
+Admin_form
+</title>
+</head>
+<body>
+
+<h1>Login comform page</h1>
+<form method='POST'>
+{%  csrf_token %}
+{{form.as_p}}
+<input type="hidden" name="next" value="{{request.GET.next}}">
+<button type=submmit>Login
+</button>
+
+</form>
+
+
+</body>
+
+</html>

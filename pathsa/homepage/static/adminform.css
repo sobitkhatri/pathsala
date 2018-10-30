@@ -1,0 +1,233 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+hr{
+	position: relative;
+	width: 50%;
+	height: 4px;
+	margin: 0 auto;
+	margin-top: 10px;
+	background-color:#222f3e;
+	border: none;
+}
+
+body{
+	background-image: url("images/university1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.main{
+	background-color: rgba(255, 255,255,0.5);
+	
+}
+
+nav{
+	position: relative;
+	display: flex;
+	height: 140px;
+	width: 100%;
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.logo{
+	background-color: red;
+	background-repeat: no-repeat;
+	flex-shrink: 0;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+}
+
+.brand_name{
+	padding-top: 30px;
+	margin-left: 40px;
+	flex: 90%;
+	text-align: left;
+	height: 100px;
+}
+
+.brand_name p{
+	font-size: 40px;
+	font-family: raleway;
+}
+
+article{
+	display: flex;
+	height: 620px;
+	width: 100%;
+}
+
+.left{
+	position: relative;
+	flex: 60%;
+	display: flex;
+}
+
+
+.hand{
+	height: auto;
+	flex: 60%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-image: url("images/laptop.png");
+}
+
+/*.overlay{
+	position: absolute;
+	top: 65px;
+	left: 154px;
+	height: 313px;
+	width: 180px;
+	background-repeat: no-repeat;
+	background-color: #2aa9e0;
+	z-index: -1;
+}
+*/
+
+.text{
+	flex: 40%;
+	padding: 0px 20px 20px 20px;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+
+.comment{
+	padding-top: 180px;
+	flex: 80%;
+	flex-shrink: 0;
+}
+
+.comment p{
+	font-size: 3em;
+	font-family: raleway;
+}
+
+.register{
+	cursor: pointer;
+	flex: 20%;
+	position: relative;
+}
+
+.register input{
+	cursor: pointer;
+	bottom: 28px;
+	left: 0px;
+	position: absolute;
+	height: 40px;
+	width: 180px;
+}
+
+.register :hover,.register2:hover{
+	cursor: pointer;
+	color: #fff;
+	background-color: #9b59b6; 
+}
+
+.right{
+	padding-top: 40px;
+	flex: 40%;
+}
+
+
+form{
+	position: relative;
+	padding-left: 25px;
+	width: 350px;
+	height: 400px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+
+span{
+	padding-left: 10px;
+	font-size: 14px;
+	font-family: raleway;
+}
+
+
+input{
+	font-family: Raleway;
+	font-size: 20px;
+	outline: none;
+	box-shadow: 2px 2px #bdc3c7;
+	text-indent: 10px;
+	margin-top: 10px;
+	display: block;
+	width: 300px;
+	height: 40px;
+	background-color: #FFF;
+	border-radius: 8px;
+	border: none;
+}
+
+.login:hover{
+	cursor: pointer;
+	background-color: #f39c12;
+	color: #fff;
+}
+
+.login{
+	text-indent: 0px;
+	cursor: pointer;
+	margin-left: 200px;
+	width: 100px;
+}
+
+
+.register2{
+	text-indent: 0px;
+	cursor: pointer;
+	margin-left: 200px;
+	width: 100px;
+	display: none;
+}
+
+
+
+@media screen and (max-width: 1170px) {
+	.brand_name p{
+		font-size: 32px;
+		font-family: raleway;
+}
+
+
+  .text{
+  	display: none;
+  }
+
+  .register2{
+	display: block;
+}
+
+.left{
+	flex: 50%;
+}
+.right{
+	flex: 50%;
+}
+}
+
+@media screen and (max-width: 840px) {
+	.brand_name{
+		margin-left: 10px;
+	}
+	.overlay{
+		display: none;
+	}
+	.left{
+		flex: 0%;
+	}
+
+	.right{
+		flex: 100%;
+	}
+}

@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>
+edit  profiel
+</title>
+</head>
+<body>
+
+<h1>edit profile</h1>
+<form method='POST'>
+{%  csrf_token %}
+{{form.as_p}}
+<input type="hidden" name="next" value="{{request.GET.next}}">
+<button type=submmit>edit
+</button>
+
+</form>
+
+
+</body>
+
+</html>

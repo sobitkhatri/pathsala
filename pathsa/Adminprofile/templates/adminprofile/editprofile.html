@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    {{user}}
+
+<form method="POST", enctype="multipart/form-data">
+    {% csrf_token %}
+    {{profile_pic}}
+    <br>
+    {{profileform1}}
+    <br>
+    {{profileform2}}
+
+
+<button type="submit">save_changes</button>
+
+
+
+</body>
+</html>
